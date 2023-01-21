@@ -30,9 +30,10 @@
     </div>
     <!--cast section-->
     <div class="cast" id="cast">
-        
+        <button style="position:absolute" id="left">left</button>
+
         <h3>cast</h3>
-       <section>
+       <section id="castsec">
         <span>
             <div class="card" id="card">
                 <img class="cast-image1" id="cast-image">
@@ -113,8 +114,10 @@
                      he is one of the most prolific Asian actors in Hollywood. 
                 </div>
             </div>
+            
+            <button style="position: absolute;" id="right">right</button>  
         </span>
-        </section>
+    </section>
     </div>
     <!--trailer section-->
     <div class="trailer" id="trailer">
@@ -182,7 +185,22 @@
     <script src="main.js">
     </script>
 </body>
+<!--Initislising JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+    <!--This script plays video using youtube's API-->
+    <!--Jquery for horizontal scrolling-->
+
     <script>
+        
+        $('#right').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "+=200px"}, "slow");});
+
+        $('#left').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "-=200px"}, "slow");});
       var tag = document.createElement('script');
     
       tag.src = "https://www.youtube.com/iframe_api";
