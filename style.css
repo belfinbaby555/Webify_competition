@@ -179,7 +179,7 @@ h3{
 }
 section{
     width: 90%;
-    overflow-x: hiudden;
+    overflow-x: scroll;
     overflow-y: hidden;
     height: 550px;
     margin-left: 5%;
