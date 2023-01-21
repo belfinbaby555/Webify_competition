@@ -14,25 +14,35 @@
 <body>
     <!--header-->
     <div class="header" id="header">
-        <img src="batlogo.png" class="logo">
-        <a href="#image-gallary" class="option">images</a>
-        <a href="#cast" class="option">Cast</a>
-        <a href="#review" class="option">Review</a>
-        <a href="" class="option">Home</a>
-        <a href="#trailer" class="option">Trailer</a>
-        <a href="#intro" class="option">Home</a>
+    
+        <!--6--><a href="#intro" class="option" >Home</a>
+        <!--5--><a href="#trailer" class="option">Trailer</a>
+        <!--3--><a href="#review" class="option">Review</a>
+        <!--2--><a href="#cast" class="option">Cast</a>
+        <!--1--><a href="#image-gallary" class="option">images</a>
+        
+        
+        
     </div>
     <div class="intro" id="intro">
         <img src="https://cdn.theatlantic.com/thumbor/4xedENNyVDQrfV_-6NrWA2wnfJo=/0x0:1600x900/1600x900/media/img/mt/2018/07/TDK/original.jpg" alt="The Dark Knight poster" class="bat-poster">
-    <h2>a film by christopher nolan</h2>
+    
     <h1>The Dark Knight</h1>
-    <button href="#trailer" class="watch-trailer"><i class="fa fa-play"></i>  watch trailer</button>
+    <h2>imbd: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 9/10 | rotten tomatoes: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 97%</h2>
+    <div style="font-size: 18px;color: rgb(184, 184, 184);padding-left: 20px;font-family: 'Roboto Condensed', sans-serif;">
+      After Gordon, Dent and Batman begin an assault on Gotham's organised<br>
+       crime, the mobs hire the Joker, a psychopathic criminal mastermind<br>
+        who offers to kill Batman and bring the city to its knees.
+    </div>
+    <div style="display: flex;flex-direction: row;margin: 0px;"><h2>starring:<h5>Christian Bale, Maggie Gyllenhaal</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>genre:<h5>action</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>release date:<h5>18 July 2008 (India)</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>duration:<h5>2h 32m</h5></h2></div>
+    <button class="watch-trailer" href="#trailer"><i class="fa fa-play"></i> trailer</button>
     </div>
     <!--cast section-->
     <div class="cast" id="cast">
-        <button style="position:absolute" id="left">left</button>
-
-        <h3>cast</h3>
+        <button id="left"><i class="fa fa-arrow-left"></i></button>
        <section id="castsec">
         <span>
             <div class="card" id="card">
@@ -40,8 +50,7 @@
                 <h4>christian bane</h4>
                 <div class="cast-description">
                     Christian Charles Philip Bale is an English actor. Known for his versatility
-                     and physical transformations for his roles, he has been a leading man in films
-                     of several genres. He has received various accolades, including an Academy Award
+                     and physical transformations for his roles. He has received various accolades, including an Academy Award
                       and two Golden Globe Awards
                 </div>
 
@@ -115,14 +124,14 @@
                 </div>
             </div>
             
-            <button style="position: absolute;" id="right">right</button>  
+            <button id="right"><i class="fa fa-arrow-right"></i></button>  
         </span>
     </section>
     </div>
     <!--trailer section-->
     <div class="trailer" id="trailer">
-        <h3>trailer</h3>
-        <div id="player"></div>
+        
+        <iframe src=""></iframe>
     </div>
     <div class="review" id="review">
         <h3>review</h3>
@@ -151,7 +160,7 @@
                 <img id="4" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60" alt="Nature" onclick="gallary(this);">
               </div>
               <div class="column">
-                <img id=5" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
+                <img id=",5" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
               </div>
               <div class="column">
                 <img id="6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyGEyqmfi9H1YXXqhvEH0V8cYo6k5WASfeQ&usqp=CAU" alt="Mountains" onclick="gallary(this);">
@@ -217,42 +226,14 @@
         
         $('#right').click(function() {
         event.preventDefault();
-        $('#castsec').animate({scrollLeft: "+=200px"}, "slow");});
+        $('#castsec').animate({scrollLeft: "+=270px"}, "slow");});
 
         $('#left').click(function() {
         event.preventDefault();
-        $('#castsec').animate({scrollLeft: "-=200px"}, "slow");});
+        $('#castsec').animate({scrollLeft: "-=270px"}, "slow");});
       var tag = document.createElement('script');
     
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-          var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'EXeTwQWrcwY',
-          color:"red",
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-    function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+
     </script>
     
 </html>
