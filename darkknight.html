@@ -30,9 +30,10 @@
     </div>
     <!--cast section-->
     <div class="cast" id="cast">
-        
+        <button style="position:absolute" id="left">left</button>
+
         <h3>cast</h3>
-       <section>
+       <section id="castsec">
         <span>
             <div class="card" id="card">
                 <img class="cast-image1" id="cast-image">
@@ -113,8 +114,10 @@
                      he is one of the most prolific Asian actors in Hollywood. 
                 </div>
             </div>
+            
+            <button style="position: absolute;" id="right">right</button>  
         </span>
-        </section>
+    </section>
     </div>
     <!--trailer section-->
     <div class="trailer" id="trailer">
@@ -130,31 +133,31 @@
         <div class="container">
             <img id="expandedImg" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60"style="width:100%">
           </div>
-        <div class="row">
+        <div class="row" id="row">
             <span>
             <div class="column">
-              <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60" alt="Nature" onclick="gallary(this);">
+              <img id="0" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60" alt="Nature" onclick="gallary(this);">
             </div>
             <div class="column">
-              <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
+              <img id="1" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
             </div>
             <div class="column">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyGEyqmfi9H1YXXqhvEH0V8cYo6k5WASfeQ&usqp=CAU" alt="Mountains" onclick="gallary(this);">
+              <img id="2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyGEyqmfi9H1YXXqhvEH0V8cYo6k5WASfeQ&usqp=CAU" alt="Mountains" onclick="gallary(this);">
             </div>
             <div class="column">
-              <img src="https://i.pinimg.com/550x/b1/db/3c/b1db3c081c031b13ca9a142264f4071b.jpg" alt="Lights" onclick="gallary(this);">
+              <img id="3" src="https://i.pinimg.com/550x/b1/db/3c/b1db3c081c031b13ca9a142264f4071b.jpg" alt="Lights" onclick="gallary(this);">
             </div>
             <div class="column">
-                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60" alt="Nature" onclick="gallary(this);">
+                <img id="4" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F07%2Fmcddakn_ec005-2000.jpg&q=60" alt="Nature" onclick="gallary(this);">
               </div>
               <div class="column">
-                <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
+                <img id=5" src="https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg" alt="Snow" onclick="gallary(this);">
               </div>
               <div class="column">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyGEyqmfi9H1YXXqhvEH0V8cYo6k5WASfeQ&usqp=CAU" alt="Mountains" onclick="gallary(this);">
+                <img id="6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtyGEyqmfi9H1YXXqhvEH0V8cYo6k5WASfeQ&usqp=CAU" alt="Mountains" onclick="gallary(this);">
               </div>
               <div class="column">
-                <img src="https://i.pinimg.com/550x/b1/db/3c/b1db3c081c031b13ca9a142264f4071b.jpg" alt="Lights" onclick="gallary(this);">
+                <img id="7" src="https://i.pinimg.com/550x/b1/db/3c/b1db3c081c031b13ca9a142264f4071b.jpg" alt="Lights" onclick="gallary(this);">
               </div>
             </span>
           </div> 
@@ -182,7 +185,43 @@
     <script src="main.js">
     </script>
 </body>
+<!--Initislising JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <script>
+        
+        function checkEdge(a){
+            a=a+1;
+             setTimeout(function(){
+              setTimeout(function(){
+                $('#row').animate({scrollLeft: "+=20px"}, "slow");
+                $("#"+a.toString()).click();},1000);
+            if (a>8){
+              $('#row').animate({scrollLeft: 0},);
+              a=0;
+              checkEdge(a);
+            }
+            else{
+              checkEdge(a);
+            }
+        }
+      ,1000)}
+        let a=0;
+        checkEdge(a);
+    </script>
+
+    <!--This script plays video using youtube's API-->
+    <!--Jquery for horizontal scrolling-->
+
+    <script>
+        
+        $('#right').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "+=200px"}, "slow");});
+
+        $('#left').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "-=200px"}, "slow");});
       var tag = document.createElement('script');
     
       tag.src = "https://www.youtube.com/iframe_api";
