@@ -26,7 +26,7 @@
         <img src="https://cdn.theatlantic.com/thumbor/4xedENNyVDQrfV_-6NrWA2wnfJo=/0x0:1600x900/1600x900/media/img/mt/2018/07/TDK/original.jpg" alt="The Dark Knight poster" class="bat-poster">
     <h2>a film by christopher nolan</h2>
     <h1>The Dark Knight</h1>
-    <button class="watch-trailer"><i class="fa fa-play"></i>  watch trailer</button>
+    <button href="#trailer" class="watch-trailer"><i class="fa fa-play"></i>  watch trailer</button>
     </div>
     <!--cast section-->
     <div class="cast" id="cast">
@@ -119,7 +119,7 @@
     <!--trailer section-->
     <div class="trailer" id="trailer">
         <h3>trailer</h3>
-        <iframe src="https://www.youtube.com/embed/EXeTwQWrcwY?controls=0&mute=0"></iframe>
+        <div id="player"></div>
     </div>
     <div class="review" id="review">
         <h3>review</h3>
@@ -180,8 +180,40 @@
         <h3>photos:</h3>
         --->
     <script src="main.js">
-        
     </script>
 </body>
-
+    <script>
+      var tag = document.createElement('script');
+    
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'EXeTwQWrcwY',
+          color:"red",
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    
 </html>
