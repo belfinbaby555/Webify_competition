@@ -135,6 +135,33 @@
     </div>
     <div class="review" id="review">
         <h3>review</h3>
+        
+        <section style="height: 300px;" id="sect">
+          <span>
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?w=2000" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">mark</div>
+              <div class="users-thought">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg?w=360" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name"> david</div>
+              <div class="users-thought">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://www.shutterstock.com/image-photo/portrait-smiling-middle-aged-african-260nw-2114224349.jpg" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">sara</div>
+              <div class="users-thought">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </div>
+            </div>
+          </span>
+        </section>
+        <button id="left1"><i class="fa fa-arrow-left"></i> PREV</button><button id="right1">NEXT <i class="fa fa-arrow-right"></i></button>
     </div>
     <!--image gallery section-->
     <div class="image-gallary" id="image-gallary">
@@ -231,6 +258,15 @@
         $('#left').click(function() {
         event.preventDefault();
         $('#castsec').animate({scrollLeft: "-=270px"}, "slow");});
+      var tag = document.createElement('script');
+
+      $('#right1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "+=1050px"}, "slow");});
+
+        $('#left1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "-=1050px"}, "slow");});
       var tag = document.createElement('script');
     
 
