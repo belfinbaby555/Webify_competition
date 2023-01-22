@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--test in push-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Wars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    
+#bat-poster{
+    background-image: linear-gradient(to left, rgba(0, 0, 0), rgba(0, 0, 0, 0)),
+    url('https://i.ibb.co/qNRSdGn/wp4119278-star-wars-episode-v-the-empire-strikes-back-wallpapers.jpg');;
+    width: 95%;
+    user-select: none;
+    z-index: -1;
+    transform: rotateY(180deg);
+    float: left;
+    position: absolute;
+    background-size: cover;
+    height:100%;
+    margin: 2.5%;
+    border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header" id="header">
+    
+        <!--6--><a href="#intro" class="option" >Home</a>
+        <!--5--><a href="#trailer" class="option">Trailer</a>
+        <!--3--><a href="#review" class="option">Review</a>
+        <!--2--><a href="#cast" class="option">Cast</a>
+        <!--1--><a href="#image-gallary" class="option">images</a>
+        
+        
+        
+    </div>
+    <div class="intro" id="intro">
+        <div id="bat-poster"></div>
+    
+    <h1>STAR WARS</h1>
+    <h2>imbd: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 9/10 | rotten tomatoes: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 97%</h2>
+    <div style="font-size: 18px;color: rgb(184, 184, 184);padding-left: 20px; margin-left: 3%; font-family: 'Roboto Condensed', sans-serif;">
+      Star Wars: The Empire Strikes Back is a thrilling continuation of the Star Wars saga, with deeper characters, <br>darker themes, and iconic moments that will have you on the edge of your seat.<br>    </div>
+    <div style="display: flex;flex-direction: row;margin: 0px;"><h2>starring:<h5>Mark Hammil,Harrison Ford</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>genre:<h5>Adventure,Action,Fantasy</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>release date:<h5>May 21, 1980</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>duration:<h5>124 minutes</h5></h2></div>
+    <button class="watch-trailer" onclick="window.location='#trailer'"><i class="fa fa-play"></i> trailer</button>
+    </div>
+    
+    <!--trailer section-->
+    <div class="trailer" id="trailer">
+      <h3>Preview</h3>
+        <h6> Star Wars: The Empire Strikes Back is the second installment in the Star Wars saga and is widely considered one of the greatest sequels of all time. Directed by Irvin Kershner and written by Leigh Brackett and Lawrence Kasdan, the movie continues the story of Luke Skywalker as he learns the ways of the Jedi from Master Yoda while also trying to rescue his friends from the clutches of the evil Darth Vader and the Galactic Empire. With its iconic moments, memorable characters, and a story that explores deeper themes of identity, love and sacrifice, the Empire Strikes Back is a cinematic masterpiece that solidified the Star Wars franchise as a cultural phenomenon. <br></h6>
+           
+        <iframe src="https://www.youtube.com/embed/JNwNXF9Y6kY?rel=0"></iframe>
+    </div>
+    <!--cast section-->
+    <div class="cast" id="cast">
+      <h3>starring</h3>
+          <div class="card">
+              <img class="cast-image2" id="cast-image" src="https://i.ibb.co/Fgrq0s2/isah.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Isah McKellen</h4>
+              <div class="cast-description">
+                Gandalf
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img class="cast-image3" id="cast-image" src="https://i.ibb.co/dLm8Rdr/oralndo.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Orlando Bloom</h4>
+              <div class="cast-description">
+                Legolas
+              </div>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <img class="cast-image4" id="cast-image" src="https://i.ibb.co/SXvggYm/as.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Sean Bean</h4>
+              <div class="cast-description">
+                Broromir
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img class="cast-image5" id="cast-image" src="https://i.ibb.co/0FsPZBm/alen.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Alan Howard</h4>
+              <div class="cast-description">
+                Voice Of Ring
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img class="cast-image6" id="cast-image" src="https://i.ibb.co/09y1G5y/sean.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Sean Astin</h4>
+              <div class="cast-description">
+                Sam
+              </div>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <img class="cast-image7" id="cast-image" src="https://i.ibb.co/7GWx2rh/billy.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Billy Boyd</h4>
+              <div class="cast-description">
+                Pippin
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img class="cast-image8" id="cast-image" src="https://i.ibb.co/hC8nbyG/slaa.jpg">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Sala Baker</h4>
+              <div class="cast-description">
+                Sauron
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/FsS0DvR/gale.jpg" class="cast-image9" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Cal Blanchett</h4>
+              <div class="cast-description">
+                Galadriel
+              </div>
+              </div>
+            </div>
+            <div class="card">
+                <img src="https://i.ibb.co/rQgXRdM/asd.jpg" class="cast-image10" id="cast-image">
+                <div style="display: flex; flex-direction: column; text-align: center;">
+                <h4>Mark Ferguson</h4>
+                <div class="cast-description">
+                  Gil-galad
+                </div>
+                </div>
+              </div>
+            <div class="card">
+              <img src="https://i.ibb.co/LPR627p/andy.jpg" class="cast-image10" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Andy Serkis</h4>
+              <div class="cast-description">
+                Golum
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/LPR627p/andy.jpg" class="cast-image11" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Martin Skelorns</h4>
+              <div class="cast-description">
+                Celebron
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/vvZhLTq/as.jpg" class="cast-image12" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Viggo Mortensen</h4>
+              <div class="cast-description">
+                Maragorn
+              </div>
+              </div>
+            </div>
+  </div>
+    <!--review and rating-->
+    <div class="review" id="review">
+        <h3>ratings</h3>
+        <div style="display: flex; flex-direction: column;">
+        <div class="external-reviews">
+        <h2 style="font-size: 50px; margin-top: 100px;">IMBD</h2>
+        <h2 style="color: black;">rating: 
+          <i style="color: yellow;" class="fa fa-star"></i>
+           <i style="color: yellow;" class="fa fa-star"></i>
+            <i style="color: yellow;"class="fa fa-star"></i> 
+            <i style="color: yellow;" class="fa fa-star"></i>
+             <i style="color: yellow;" class="fa fa-star-half-o"></i> 9/10</h2>
+        </div>
+        <div class="external-reviews">
+          <h2 style="font-size: 50px;">ROTTEN-TOMATOES</h2>
+          <h2 style="color: black;">rating: 
+            <i style="color: yellow;" class="fa fa-star"></i>
+             <i style="color: yellow;" class="fa fa-star"></i>
+              <i style="color: yellow;"class="fa fa-star"></i> 
+              <i style="color: yellow;" class="fa fa-star"></i>
+               <i style="color: yellow;" class="fa fa-star-half-o"></i> 97%</h2>
+          </div>
+          <div class="audience">
+            <h2 style="font-size: 50px;">Audience rating</h2>
+            <i class="fa fa-star">5</i><div class="outer">
+              <div class="inner">
+              </div>
+            </div>
+            <i class="fa fa-star">4</i>
+            <div class="outer">
+              <div class="inner" style="width: 2%;">
+              </div>
+            </div>
+            <i class="fa fa-star">3</i>
+            <div class="outer">
+              <div class="inner" style="width: 1%;">
+              </div>
+            </div>
+            <i class="fa fa-star">2</i>
+            <div class="outer">
+              <div class="inner" style="width: 0.5%;">
+              </div>
+            </div>
+            <i class="fa fa-star">1</i>
+            <div class="outer">
+              <div class="inner" style="width: 1%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Peoples review</h3>
+        <button id="left1"><i class="fa fa-arrow-left"></i> </button>
+        <section style="height: 275px;margin:0cm;width: 100%;" id="sect">
+          <span style="margin-top: 10px; box-shadow:0px 0px;">
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?w=2000" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">Fahad Gar <br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i></div>
+              <div class="users-thought">
+                The Empire Strikes Back is a cinematic masterpiece that raises the bar for sequels, with iconic moments, memorable characters, and a story that explores deeper themes of identity and sacrifice.</div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg?w=360" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name"> Pat Cahill<br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+              </div>
+              <div class="users-thought">
+                The Empire Strikes Back is a true sci-fi classic, with stunning visual effects, a compelling story and a twist that will leave you reeling.
+            </div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://www.shutterstock.com/image-photo/portrait-smiling-middle-aged-african-260nw-2114224349.jpg" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">Walter Hines<br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+              </div>
+              <div class="users-thought">
+                One of the greatest sequels of all time, The Empire Strikes Back is a thrilling continuation of the Star Wars saga, with deeper characters, darker themes, and iconic moments that will have you on the edge of your seat.
+            </div>
+            </div>
+          </span>
+        </section>
+        <button id="right1"> <i class="fa fa-arrow-right"></i></button>
+    </div>
+    <!--image gallery section-->
+    <div class="image-gallary" id="image-gallary">
+        <h3>image</h3>
+        <div class="container">
+            <img id="expandedImg" src="https://i.ibb.co/2d4g9zv/1.jpg"style="width:100%">
+          </div>
+          <button id="img-right"><i class="fa fa-arrow-right"></i></button>  
+
+        <div class="row" id="row">
+          
+            <span style="width: 100%; margin-top: 0cm;">
+            <div class="column">
+              <img id="0" src="https://i.ibb.co/jySGnZt/1.png" alt="Nature" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="1" src="https://i.ibb.co/Tkbwmb6/2.pngg" alt="Snow" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="2" src="https://i.ibb.co/vHcznMr/3.png" alt="Mountains" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="3" src="https://i.ibb.co/nMrYJr6/4.png" alt="Lights" onclick="gallary(this);">
+            </div>
+            <div class="column">
+                <img id="4" src="https://i.ibb.co/yQfcKrS/5.png" alt="Nature" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="5" src="https://i.ibb.co/g65vC2N/6.png" alt="Snow" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="6" src="https://i.ibb.co/yNgbGf6/7.png" alt="Mountains" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="7" src="https://i.ibb.co/Sx5sQHh/8.png" alt="Lights" onclick="gallary(this);">
+              </div>
+            </span>
+          </div> 
+          <button id="img-left"><i class="fa fa-arrow-left"></i></button>  
+
+    </div>
+    <!--more like this movies-->
+    <div class="more-like-this">
+        <h3>More Like This:</h3>
+        <div>
+        <a href="The Lord of The Rings.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" width="220px" height="326px"></a>
+        <a href="Inception.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" width="220px" height="326px"></a>
+        <a href="The Matrix.html" target="_blank"><img src="https://flxt.tmsimg.com/assets/p22804_p_v8_av.jpg" width="220px" height="326px"></a>
+        <a href="Star Wars.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jp" width="220px" height="326px"></b>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+        <!--<h3> trailer:</h3>
+        <h3>rating:</h3>
+        <h3>duration:</h3>
+        <h3>release year:</h3>
+        <h3>reviews:</h3>
+        <h3>photos:</h3>
+        --->
+    <script src="main.js">
+    </script>
+</body>
+<!--Initislising JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+       // let stop=true;
+        //function checkEdge(a){
+            //a=a+1;
+             //setTimeout(function(){
+              //setTimeout(function(){
+               // $('#row').animate({scrollLeft: "+=100px"}, "slow");
+               // $("#"+a.toString()).click();},1000);
+
+      
+            //if (a>7){
+             // $('#row').animate({scrollLeft: 0},);
+             // a=0;
+             // checkEdge(a);
+            //}
+           // else if (stop==true){
+              //stop=false;            
+
+             // _.delay(checkEdge(a), 2000);
+           // }
+           // else{
+              //checkEdge(a);
+           // }
+       // }
+      //,2000)}
+        let a=0;
+        $('#img-right').click(function() {
+        event.preventDefault();
+        stop=true;
+        $('#row').animate({scrollLeft: "+=270px"}, "slow");});
+
+        $('#img-left').click(function() {
+        event.preventDefault();
+        stop=true;
+        $('#row').animate({scrollLeft: "-=270px"}, "slow");});
+        checkEdge(a);
+    </script>
+
+    <!--This script plays video using youtube's API-->
+    <!--Jquery for horizontal scrolling-->
+
+    <script>
+        
+        $('#right').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "+=309px"}, "slow");});
+
+        $('#left').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "-=309px"}, "slow");});
+      var tag = document.createElement('script');
+          
+      $('#right1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "+=1300px"}, "fast");});
+
+        $('#left1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "-=1300px"}, "fast");});
+      var tag = document.createElement('script');
+
+    </script>
+    
+</html>
+</html>
