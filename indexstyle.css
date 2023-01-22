@@ -1,0 +1,73 @@
+body{
+    margin:0px;
+    background-color: rgb(43, 43, 43);
+}
+header{
+    width: 100%;
+    height: fit-content;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 200px;
+    font-size: 75px;
+    margin: 0px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+h2{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 25px;
+    margin: 0px;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#img1{
+    background-image: url('https://images2.alphacoders.com/110/110010.jpg');
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    height:100%;
+}
+.movies{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to top,rgb(43, 43, 43),rgb(43, 43, 43),rgb(43, 43, 43),rgb(43, 43, 43),rgb(43, 43, 43),rgb(43, 43, 43),rgba(0, 0, 0, 0));
+}
+.box1{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 2.5% 0%;
+    background-color:rgb(43, 43, 43) ;
+}
+.box1:nth-of-type(2){
+    box-shadow: 1px 1px 10px white;
+}
+.box1:nth-of-type(4){
+    box-shadow: 1px 1px 10px white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 50px;
+}
+p{
+   position: absolute;
+    color: white;
+    font-size: 25px;
+    padding: 200px 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 65%;
+    right: 0mm;
+}
