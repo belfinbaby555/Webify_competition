@@ -227,49 +227,7 @@ span{
     border-radius: 400px;
     margin-top: 15px;
 }
-.cast-image1{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/christian_bale.jpg');
-}
 
-.cast-image2{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/Heath_Ledger.jpg');
-}
-
-.cast-image3{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/Aaron_.jpg');
-}
-
-.cast-image4{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/michael_cain.PNG');
-}
-
-.cast-image5{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/morgan.PNG');
-}
-
-.cast-image6{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/maggie.PNG');
-}
-
-.cast-image7{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/cillian_m.PNG');
-}
-
-.cast-image8{
-    content: url('https://encryptedmasterchat.pythonanywhere.com/static/chin.PNG');
-}
-.cast-image9{
-    content: url('');
-}
-.cast-image10{
-    content: url('');
-}
-.cast-image11{
-    content: url('');
-}
-.cast-image12{
-    content: url('');
-}
 h4{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
@@ -394,36 +352,35 @@ h6{
 }
 /**image-gallary**/
 .image-gallary{
-    width: 100%;
+    width: 95%;
     height: fit-content;
     background-color: rgb(255, 255, 255);
     margin-bottom: 100px;
+    margin: 2.5%;
+    border-radius: 25px;
 }
 .column {
     float: left;
-    width: 210px;
+    width: 410px;
     padding:10px 0px;
 }
 
 .column img {
-    opacity: 0.8;
     cursor: pointer;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     transition: 0.5s;
+    margin: 20px;
 }
 .row{
     width: 90%;
-    margin-left: 2.5%;
+    margin-left: 5%;
     overflow-x: scroll;
-    height: 130px;
+    height: 250px;
     overflow-y: hidden;
 }
 .row::-webkit-scrollbar{
     display: none;
-}
-.column img:hover {
-    opacity: 1;
 }
 .container {
     position: relative;
@@ -435,15 +392,34 @@ h6{
 .container img{
     transition: 0.5;
 }
+.image-gallary button{
+    width: 50px;
+    height: 200px;
+    font-size: 25px;
+    color: rgba(0, 0, 0);
+    background-color: rgba(199, 22, 22, 0);
+    margin-top: 20px;
+    border: 0cm;
+    position: absolute;
+    z-index: 4;
+    box-shadow: 1p 1px 5px grey;
+}
+#img-left{
+    right: 2.5%;
+    margin-top: -230px;
+}
 /**more like this**/
 .more-like-this{
     width: 100%;
-    height: 500px;
+    height:fit-content;
+    background-color: rgb(63, 63, 63);
+}
+.more-like-this a{
+
 }
 /**footer**/
 footer{
     width: 100%;
     height: 400px;
     background-color: rgb(63, 63, 63);
-    border-top: 10px solid #f51112;
 }
