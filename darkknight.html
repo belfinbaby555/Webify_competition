@@ -67,7 +67,7 @@
     <div class="cast" id="cast">
       <h3>starring</h3>
           <div class="card" id="card">
-              <img class="cast-image1" id="cast-image">
+              <img class="cast-image1" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/christian_bale.jpg">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>christian bane</h4>
               <div class="cast-description">
@@ -76,7 +76,7 @@
 </div>
           </div>
           <div class="card">
-              <img class="cast-image2" id="cast-image">
+              <img class="cast-image2" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/Heath_Ledger.jpg">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Heath Ledger</h4>
               <div class="cast-description">
@@ -85,7 +85,7 @@
               </div>
           </div>
           <div class="card">
-              <img class="cast-image3" id="cast-image">
+              <img class="cast-image3" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/Aaron_.jpg">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Aaron Eckhart</h4>
               <div class="cast-description">
@@ -95,7 +95,7 @@
           </div>
           <br>
           <div class="card">
-              <img class="cast-image4" id="cast-image">
+              <img class="cast-image4" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/michael_cain.PNG">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Michael Caine</h4>
               <div class="cast-description">
@@ -104,7 +104,7 @@
               </div>
           </div>
           <div class="card">
-              <img class="cast-image5" id="cast-image">
+              <img class="cast-image5" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/morgan.PNG">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Morgan Freeman</h4>
               <div class="cast-description">
@@ -113,7 +113,7 @@
               </div>
           </div>
           <div class="card">
-              <img class="cast-image6" id="cast-image">
+              <img class="cast-image6" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/maggie.PNG">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Maggie Gyllenhaal</h4>
               <div class="cast-description">
@@ -123,7 +123,7 @@
           </div>
           <br>
           <div class="card">
-              <img class="cast-image7" id="cast-image">
+              <img class="cast-image7" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/cillian_m.PNG">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Cillian Murphy</h4>
               <div class="cast-description">
@@ -132,7 +132,7 @@
               </div>
           </div>
           <div class="card">
-              <img class="cast-image8" id="cast-image">
+              <img class="cast-image8" id="cast-image" src="https://encryptedmasterchat.pythonanywhere.com/static/chin.PNG">
               <div style="display: flex; flex-direction: column; text-align: center;">
               <h4>Chin Han</h4>
               <div class="cast-description">
@@ -285,11 +285,9 @@
     </div>
     <!--image gallery section-->
     <div class="image-gallary" id="image-gallary">
-        <h3>image</h3>
-        <div class="container">
-            <img id="expandedImg" src="https://i.ibb.co/2d4g9zv/1.jpg"style="width:100%">
-          </div>
-          <button id="img-right"><i class="fa fa-arrow-right"></i></button>  
+        <h3>images</h3>
+        
+          <button id="img-right"><i class="fa fa-arrow-left"></i></button>  
 
         <div class="row" id="row">
           
@@ -320,12 +318,15 @@
               </div>
             </span>
           </div> 
-          <button id="img-left"><i class="fa fa-arrow-left"></i></button>  
+          <button id="img-left"><i class="fa fa-arrow-right"></i></button>  
+          <div class="container">
+            <img id="expandedImg" style="width:100%">
+          </div>
 
     </div>
     <!--more like this movies-->
     <div class="more-like-this">
-        <h3>More Like This:</h3>
+        <h1 style="padding: 10px;">More Like This:</h1>
         <div>
         <a href="The Lord of The Rings.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" width="220px" height="326px"></a>
         <a href="Inception.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" width="220px" height="326px"></a>
@@ -350,30 +351,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <script>
-        let stop=false;
-        function checkEdge(a){
-            a=a+1;
-             setTimeout(function(){
-              setTimeout(function(){
-                $('#row').animate({scrollLeft: "+=100px"}, "slow");
-                $("#"+a.toString()).click();},1000);
+       // let stop=true;
+        //function checkEdge(a){
+            //a=a+1;
+             //setTimeout(function(){
+              //setTimeout(function(){
+               // $('#row').animate({scrollLeft: "+=100px"}, "slow");
+               // $("#"+a.toString()).click();},1000);
 
       
-            if (a>7){
-              $('#row').animate({scrollLeft: 0},);
-              a=0;
-              checkEdge(a);
-            }
-            else if (stop==true){
-              stop=false;            
+            //if (a>7){
+             // $('#row').animate({scrollLeft: 0},);
+             // a=0;
+             // checkEdge(a);
+            //}
+           // else if (stop==true){
+              //stop=false;            
 
-              _.delay(checkEdge(a), 2000);
-            }
-            else{
-              checkEdge(a);
-            }
-        }
-      ,2000)}
+             // _.delay(checkEdge(a), 2000);
+           // }
+           // else{
+              //checkEdge(a);
+           // }
+       // }
+      //,2000)}
         let a=0;
         $('#img-right').click(function() {
         event.preventDefault();
