@@ -347,30 +347,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <script>
-        let stop=false;
-        function checkEdge(a){
-            a=a+1;
-             setTimeout(function(){
-              setTimeout(function(){
-                $('#row').animate({scrollLeft: "+=100px"}, "slow");
-                $("#"+a.toString()).click();},1000);
+       // let stop=true;
+        //function checkEdge(a){
+            //a=a+1;
+             //setTimeout(function(){
+              //setTimeout(function(){
+               // $('#row').animate({scrollLeft: "+=100px"}, "slow");
+               // $("#"+a.toString()).click();},1000);
 
       
-            if (a>7){
-              $('#row').animate({scrollLeft: 0},);
-              a=0;
-              checkEdge(a);
-            }
-            else if (stop==true){
-              stop=false;            
+            //if (a>7){
+             // $('#row').animate({scrollLeft: 0},);
+             // a=0;
+             // checkEdge(a);
+            //}
+           // else if (stop==true){
+              //stop=false;            
 
-              _.delay(checkEdge(a), 2000);
-            }
-            else{
-              checkEdge(a);
-            }
-        }
-      ,2000)}
+             // _.delay(checkEdge(a), 2000);
+           // }
+           // else{
+              //checkEdge(a);
+           // }
+       // }
+      //,2000)}
         let a=0;
         $('#img-right').click(function() {
         event.preventDefault();
@@ -408,5 +408,7 @@
       var tag = document.createElement('script');
 
     </script>
+    
+</html>
     
 </html>
