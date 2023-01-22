@@ -147,11 +147,11 @@ h5{
 }
 /**cast**/
 .cast{
-    width:100%;
-    height:450px;
-    border-top: 2cm solid rgba(0, 0, 0, 0);
-    background-color: transparent;
-    margin-top: -200px;
+    width:95%;
+    height:1000px;
+    background-color: white;
+    margin: 2.5%;
+    border-radius: 25px;
 }
 
 h3{
@@ -161,36 +161,23 @@ h3{
     padding: 10px 50px;
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(0, 0, 0);
-    line-height: 0px;
     stroke-width: 10px ;
     padding-top: 50px;
 }
 .card{
-    width: 250px;
-    height: 230px;
+    width: 350px;
+    height: 150px;
     background-color: white;
     padding-left:  7px;
     padding-right: 7px;
-    text-align: center;
+    float: left;
     overflow: hidden;
-    transition: 0.2s;
     border-radius: 10px;
-    margin:0px 38px;
-    border: 1px solid grey;
+    margin:10px 25px;
+    display: flex;
+    flex-direction: row;
 }
-.card:hover{
-    height: 380px;
-    transform: scale(1.3) translateY(-70px);
-    box-shadow: 1px 1px 30px gray;
-    border-radius: 5px;
-    border: 0px;
-}
-.card:nth-of-type(1):hover{
-    margin-left: 50px;
-}
-.card:nth-of-type(8):hover{
-    margin-right: 50px;
-}
+
 section{
     width: 75%;
     overflow-x: scroll;
@@ -198,6 +185,7 @@ section{
     height: 500px;
     margin-left: 10%;
     background-color: transparent;
+    padding-bottom: 100px;
     
 }
 section::-webkit-scrollbar{
@@ -234,8 +222,8 @@ span{
     background-color: transparent;
 }
 #cast-image{
-    width:175px;
-    height: 175px;
+    width:100px;
+    height: 100px;
     border-radius: 400px;
     margin-top: 15px;
 }
@@ -270,10 +258,22 @@ span{
 .cast-image8{
     content: url('https://encryptedmasterchat.pythonanywhere.com/static/chin.PNG');
 }
+.cast-image9{
+    content: url('');
+}
+.cast-image10{
+    content: url('');
+}
+.cast-image11{
+    content: url('');
+}
+.cast-image12{
+    content: url('');
+}
 h4{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-    margin-top: 5px;
+    margin: 35px 0px 0px 20px;
     text-transform: uppercase;
     font-weight: bolder;
     color: rgb(0, 0, 0);
@@ -281,7 +281,8 @@ h4{
 .cast-description{
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(99, 99, 99);
-    font-size: 15px;
+    font-size: 18px;
+    margin-left: 20px;
 }
 /**trailer**/
 .trailer{
@@ -290,12 +291,15 @@ h4{
     background-color:rgb(255, 255, 255) ;
     margin: 3%;
     border-radius: 25px;
+    margin-top: 150px;
 }
 iframe{
     width: 80%;
     margin-left: 10%;
     height: 500px;
     margin-bottom: 100px;
+    border: 10px solid #ff3c00;
+    border-bottom:50px solid #ff3c00 ;
 }
 h6{
     margin: 50px 150px;
@@ -305,52 +309,88 @@ h6{
 /**review**/
 .review{
     width: 95%;
-    height: 700px;
+    height: fit-content;
     background-color: white;
     margin: 2.5%;
     border-radius: 25px;
 }
+.external-reviews{
+    width: 40%;
+    height: fit-content;
+    margin: 0% 5%;
+    background-color: rgba(0, 255, 255, 0);
+}
 .review-audience{
     display: flex;
     flex-direction: row;
-    width: 750px;
-    height:200px;
+    width: 850px;
+    height:275px;
     background-color: white;
-    margin: 0px 150px;
+    margin: 45px 225px;
     box-shadow: 1px 1px 10px grey;
-    transform: scale(1.4);
 }
 .user-profile{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 25px;
+    border-radius: 100px;
 }
 .user-name{
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     text-transform: uppercase;
 }
+.user-name i{
+    font-size: 25px;
+    color: rgb(238, 238, 2);
+    padding: 0px;
+}
 .users-thought{
-    font-size: 18px;
+    font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 5px;
     color: rgb(65, 65, 65);
 }
 .review button{
- width: 100px;
- height: 50px;
- font-size: 20px;
- color: black;
- background-color: rgb(209, 209, 209);
+ width: 50px;
+ height: 275px;
+ font-size: 25px;
+ color: rgba(0, 0, 0);
+ background-color: rgba(209, 209, 209, 0);
  margin-top: 20px;
  border: 0cm;
+ position: absolute;
+ z-index: 4;
 }
 #left1{
-    margin-left: 40%;
+    margin-left: 0%;
+    margin-top: 50px;
 }
 #right1{
-    margin-left: 10px;
+    margin-left:91%;
+    margin-top: -330px;
+}
+.audience{
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    margin-top: -10px;
+}
+.outer{
+    width:80%;
+    height: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.inner{
+    width: 95%;
+    height: 10px;
+    background-color: rgb(219, 216, 6);
+    border-radius: 10px;
 }
 /**image-gallary**/
 .image-gallary{
