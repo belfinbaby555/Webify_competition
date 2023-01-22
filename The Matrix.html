@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--test in push-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matrix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    
+#bat-poster{
+    background-image: linear-gradient(to left, rgba(0, 0, 0), rgba(0, 0, 0, 0)),
+    url('https://i.ibb.co/BPsyDVf/matrix.jpg');;
+    width: 95%;
+    user-select: none;
+    z-index: -1;
+    transform: rotateY(180deg);
+    float: left;
+    position: absolute;
+    background-size: cover;
+    height:100%;
+    margin: 2.5%;
+    border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header" id="header">
+    
+        <!--6--><a href="#intro" class="option" >Home</a>
+        <!--5--><a href="#trailer" class="option">Trailer</a>
+        <!--3--><a href="#review" class="option">Review</a>
+        <!--2--><a href="#cast" class="option">Cast</a>
+        <!--1--><a href="#image-gallary" class="option">images</a>
+        
+        
+        
+    </div>
+    <div class="intro" id="intro">
+        <div id="bat-poster"></div>
+    
+    <h1>MATRIX</h1>
+    <h2>imbd: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 9/10 | rotten tomatoes: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> 97%</h2>
+    <div style="font-size: 18px;color: rgb(184, 184, 184);padding-left: 20px; margin-left: 3%; font-family: 'Roboto Condensed', sans-serif;">
+        The Matrix is a visually stunning and mind-bending sci-fi classic.<br>
+         Keanu Reeves gives a memorable performance as Neo, a hacker who discovers the truth about reality.<br>
+         The film's exploration of free will and control makes for a thought-provoking watch.
+    </div>
+    <div style="display: flex;flex-direction: row;margin: 0px;"><h2>starring:<h5>Keanu Reevs, Laurence Fishborne</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>genre:<h5>action</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>release date:<h5>March 31, 1999.</h5></h2></div>
+    <div style="display: flex;flex-direction: row"><h2>duration:<h5>2h 32m</h5></h2></div>
+    <button class="watch-trailer" onclick="window.location='#trailer'"><i class="fa fa-play"></i> trailer</button>
+    </div>
+    
+    <!--trailer section-->
+    <div class="trailer" id="trailer">
+      <h3>Preview</h3>
+        <h6>The Matrix is a science fiction action film released in 1999. <br> It was written and directed by the Wachowski siblings, and stars Keanu Reeves as Neo, a hacker who discovers that the world he lives in is actually a simulated reality created by sentient machines. <br> Neo is contacted by a mysterious figure named Morpheus, who believes Neo is "The One," a chosen individual who can defeat the machines and free humanity from their control. <br> Together with Morpheus and Trinity, another member of the rebellion, Neo sets out to uncover the truth about the Matrix and his role in the fate of mankind. <br> Along the way, they must evade agents, superhuman beings who can bend the laws of the Matrix to their will. <br> The film features groundbreaking special effects and action sequences, including the iconic "bullet time" technique. <br> It also explores themes of free will, fate, and the nature of reality. <br> The Matrix was a critical and commercial success, and spawned two sequels, as well as various other media. <br> It has since become a cultural phenomenon and is widely considered one of the greatest science fiction films of all time.</h6>
+           
+        <iframe src="https://www.youtube.com/embed/vKQi3bBA1y8?rel=0"></iframe>
+    </div>
+    <!--cast section-->
+    <div class="cast" id="cast">
+      <h3>starring</h3>
+          <div class="card" id="card">
+              <img src="https://i.ibb.co/znbJfgz/keanu-reeves.jpg" class="cast-image1" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Keanu Reeves</h4>
+              <div class="cast-description">
+               Neo
+              </div>
+</div>
+          </div>
+          <div class="card">
+              <img src="https://i.ibb.co/VW5Vtsm/laurence-fishborne.jpg" class="cast-image2" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Laurence Fishborne</h4>
+              <div class="cast-description">
+                Morpheus
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.ibb.co/CQRLnRp/Carrie-Anne-Moss-May.jpg" class="cast-image3" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Carrie Anne Moss May</h4>
+              <div class="cast-description">
+                Harvey Dent
+              </div>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <img src="https://i.ibb.co/wY6Qx6d/hugo-waeving.jpg" class="cast-image4" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Hugo Weaving</h4>
+              <div class="cast-description">
+                Agent Smith
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.ibb.co/b7hQcJx/gloria-fgoster.jpg" class="cast-image5" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Gloria Foster</h4>
+              <div class="cast-description">
+                Oracle
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.ibb.co/fpNKqwg/joe-pantoliano.jpg" class="cast-image6" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Joe Pantoliano</h4>
+              <div class="cast-description">
+                Cypher
+              </div>
+              </div>
+          </div>
+          <br>
+          <div class="card">
+              <img src="https://i.ibb.co/4pnztHg/marcus-chong.jpg" class="cast-image7" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Marcus Chong</h4>
+              <div class="cast-description">
+                Tank
+              </div>
+              </div>
+          </div>
+          <div class="card">
+              <img src="https://i.ibb.co/PWpNSSP/julian.jpg" class="cast-image8" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Julian Arhanga</h4>
+              <div class="cast-description">
+                Apoc
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/fGzbthX/matt.jpg" class="cast-image9" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Matt Doran</h4>
+              <div class="cast-description">
+                Mouse
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/qYZbRVq/belinda.jpg" class="cast-image10" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Belinda McClory</h4>
+              <div class="cast-description">
+                Switch
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/GP1k64h/anotnty.jpg" class="cast-image11" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Antony Ray Parker</h4>
+              <div class="cast-description">
+                Dozer
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.ibb.co/R6LYFqN/opayl.jpg" class="cast-image12" id="cast-image">
+              <div style="display: flex; flex-direction: column; text-align: center;">
+              <h4>Paul Goddard </h4>
+              <div class="cast-description">
+                Agent Brown
+              </div>
+              </div>
+            </div>
+  </div>
+    <!--review and rating-->
+    <div class="review" id="review">
+        <h3>ratings</h3>
+        <div style="display: flex; flex-direction: column;">
+        <div class="external-reviews">
+        <h2 style="font-size: 50px; margin-top: 100px;">IMBD</h2>
+        <h2 style="color: black;">rating: 
+          <i style="color: yellow;" class="fa fa-star"></i>
+           <i style="color: yellow;" class="fa fa-star"></i>
+            <i style="color: yellow;"class="fa fa-star"></i> 
+            <i style="color: yellow;" class="fa fa-star"></i>
+             <i style="color: yellow;" class="fa fa-star-half-o"></i> 9/10</h2>
+        </div>
+        <div class="external-reviews">
+          <h2 style="font-size: 50px;">ROTTEN-TOMATOES</h2>
+          <h2 style="color: black;">rating: 
+            <i style="color: yellow;" class="fa fa-star"></i>
+             <i style="color: yellow;" class="fa fa-star"></i>
+              <i style="color: yellow;"class="fa fa-star"></i> 
+              <i style="color: yellow;" class="fa fa-star"></i>
+               <i style="color: yellow;" class="fa fa-star-half-o"></i> 97%</h2>
+          </div>
+          <div class="audience">
+            <h2 style="font-size: 50px;">Audience rating</h2>
+            <i class="fa fa-star">5</i><div class="outer">
+              <div class="inner">
+              </div>
+            </div>
+            <i class="fa fa-star">4</i>
+            <div class="outer">
+              <div class="inner" style="width: 2%;">
+              </div>
+            </div>
+            <i class="fa fa-star">3</i>
+            <div class="outer">
+              <div class="inner" style="width: 1%;">
+              </div>
+            </div>
+            <i class="fa fa-star">2</i>
+            <div class="outer">
+              <div class="inner" style="width: 0.5%;">
+              </div>
+            </div>
+            <i class="fa fa-star">1</i>
+            <div class="outer">
+              <div class="inner" style="width: 1%;">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>Peoples review</h3>
+        <button id="left1"><i class="fa fa-arrow-left"></i> </button>
+        <section style="height: 275px;margin:0cm;width: 100%;" id="sect">
+          <span style="margin-top: 10px; box-shadow:0px 0px;">
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?w=2000" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">Fahad Gar <br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i></div>
+              <div class="users-thought">
+                The Matrix is a visually stunning and mind-blowing film that revolutionized science fiction filmmaking
+                .</div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg?w=360" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name"> Pat Cahill<br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+              </div>
+              <div class="users-thought">The Matrix is a classic science fiction film that deserves all the praise it gets. The story is deep and thought-provoking, dealing with themes of reality and free will. Keanu Reeves shines in his role as Neo, and the supporting cast is also great. It's a movie that I can watch again and again."</div>
+              </div>
+            </div>
+            <div class="review-audience">
+              <img src="https://www.shutterstock.com/image-photo/portrait-smiling-middle-aged-african-260nw-2114224349.jpg" class="user-profile">
+              <div style="display: flex;flex-direction: column;">
+              <div class="user-name">Walter Hines<br>
+                <i  class="fa fa-star"></i>
+                 <i  class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i> 
+                 <i class="fa fa-star"></i>
+                  <i  class="fa fa-star"></i>
+              </div>
+              <div class="users-thought">The Matrix is a visually striking and action-packed film that explores the nature of reality in a unique and thrilling way.</div>
+              </div>
+            </div>
+          </span>
+        </section>
+        <button id="right1"> <i class="fa fa-arrow-right"></i></button>
+    </div>
+    <!--image gallery section-->
+    <div class="image-gallary" id="image-gallary">
+        <h3>image</h3>
+        <div class="container">
+            <img id="expandedImg" src="https://i.ibb.co/2d4g9zv/1.jpg"style="width:100%">
+          </div>
+          <button id="img-right"><i class="fa fa-arrow-right"></i></button>  
+
+        <div class="row" id="row">
+          
+            <span style="width: 100%; margin-top: 0cm;">
+            <div class="column">
+              <img id="0" src="https://i.ibb.co/gWYJLYn/1.png" alt="Nature" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="1" src="https://i.ibb.co/ZJmdCLK/2.png" alt="Snow" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="2" src="https://i.ibb.co/GJ5hMtH/3.png" alt="Mountains" onclick="gallary(this);">
+            </div>
+            <div class="column">
+              <img id="3" src="https://i.ibb.co/HFsz9Y0/44.png" alt="Lights" onclick="gallary(this);">
+            </div>
+            <div class="column">
+                <img id="4" src="https://i.ibb.co/LRmv1nq/5.png" alt="Nature" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="5" src="https://i.ibb.co/5ss62JM/6.png" alt="Snow" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="6" src="https://i.ibb.co/bXpJJ2h/7.png" alt="Mountains" onclick="gallary(this);">
+              </div>
+              <div class="column">
+                <img id="7" src="https://i.ibb.co/3cFwrnK/8.png" alt="Lights" onclick="gallary(this);">
+              </div>
+            </span>
+          </div> 
+          <button id="img-left"><i class="fa fa-arrow-left"></i></button>  
+
+    </div>
+    <!--more like this movies-->
+    <div class="more-like-this">
+        <h3>More Like This:</h3>
+        <div>
+        <a href="The Lord of The Rings.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" width="220px" height="326px"></a>
+        <a href="Inception.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" width="220px" height="326px"></a>
+        <a href="The Matrix.html" target="_blank"><img src="https://flxt.tmsimg.com/assets/p22804_p_v8_av.jpg" width="220px" height="326px"></a>
+        <a href="Star Wars.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jp" width="220px" height="326px"></b>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+        <!--<h3> trailer:</h3>
+        <h3>rating:</h3>
+        <h3>duration:</h3>
+        <h3>release year:</h3>
+        <h3>reviews:</h3>
+        <h3>photos:</h3>
+        --->
+    <script src="main.js">
+    </script>
+</body>
+<!--Initislising JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        let stop=false;
+        function checkEdge(a){
+            a=a+1;
+             setTimeout(function(){
+              setTimeout(function(){
+                $('#row').animate({scrollLeft: "+=100px"}, "slow");
+                $("#"+a.toString()).click();},1000);
+
+      
+            if (a>7){
+              $('#row').animate({scrollLeft: 0},);
+              a=0;
+              checkEdge(a);
+            }
+            else if (stop==true){
+              stop=false;            
+
+              _.delay(checkEdge(a), 2000);
+            }
+            else{
+              checkEdge(a);
+            }
+        }
+      ,2000)}
+        let a=0;
+        $('#img-right').click(function() {
+        event.preventDefault();
+        stop=true;
+        $('#row').animate({scrollLeft: "+=270px"}, "slow");});
+
+        $('#img-left').click(function() {
+        event.preventDefault();
+        stop=true;
+        $('#row').animate({scrollLeft: "-=270px"}, "slow");});
+        checkEdge(a);
+    </script>
+
+    <!--This script plays video using youtube's API-->
+    <!--Jquery for horizontal scrolling-->
+
+    <script>
+        
+        $('#right').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "+=309px"}, "slow");});
+
+        $('#left').click(function() {
+        event.preventDefault();
+        $('#castsec').animate({scrollLeft: "-=309px"}, "slow");});
+      var tag = document.createElement('script');
+          
+      $('#right1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "+=1300px"}, "fast");});
+
+        $('#left1').click(function() {
+        event.preventDefault();
+        $('#sect').animate({scrollLeft: "-=1300px"}, "fast");});
+      var tag = document.createElement('script');
+
+    </script>
+    
+</html>
